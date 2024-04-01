@@ -19,7 +19,7 @@ public class LispInterpreter {
             } else if ("atom?".equals(command)) {  // (atom? exp)
                 return eval(xs.get(1)) instanceof String;
             } else if ("eq?".equals(command)) {  // (eq? exp1 exp2)
-                return eval(xs.get(1)).equals(eval(xs.get(2));
+                return eval(xs.get(1)).equals(eval(xs.get(2)));
             } else if ("setq".equals(command)) {  // (setq var exp)
                 Object var = xs.get(1);
                 Object exp = xs.get(2);
